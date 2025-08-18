@@ -2,13 +2,14 @@
 #include <stdio.h>
 #include <math.h>
 /* Решение квадратного уравнения*/
+
+
+
 int main()
 {
     float a, b, c;
-    a = b = c = EOF;
-    printf("Введите коэффициенты a ,b ,c уравнения ax^2 + bx + c\n ");
-    scanf (" %f%f%f", &a, &b, &c);
-    if (a == EOF or b == EOF or c == EOF) printf ("Некорректный ввод параметров");
+    printf("Введите ко  эффициенты a ,b ,c уравнения ax^2 + bx + c\n ");
+    if (scanf (" %f%f%f", &a, &b, &c) != 3) printf ("Некорректный ввод параметров");
     else
     {
 
@@ -25,7 +26,7 @@ int main()
             else
             {
                 x1 = x2 = (-1) * c / b  ;
-                printf( " У уравнения один корень %.2f\n", x1);
+                printf( " У уравнения один корень %.6f\n", x1);
             }
         }
         else
@@ -42,13 +43,13 @@ int main()
             else if (discr == 0)
             {
                 x2 = x1 = (-1) * b / (2 * a);
-                printf("У уравнения один корень, равный\t %.2f\n", x1);
+                printf("У уравнения один корень, равный\t %.6f\n", x1);
             }
             else
             {
                 x1 = ((-1) * b - sqrt(discr)) / (2 * a);
                 x2 = ((-1) * b + sqrt(discr)) / (2 * a);
-                printf("Корни уравнения равны %.2f\t %.2f\n", x1, x2);
+                printf("Корни уравнения равны %.6f\t %.6f\n", x1, x2);
             }
         }
     }
