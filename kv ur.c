@@ -17,10 +17,11 @@ int main()
     printf("Введите коэффициенты a, b, c уравнения ax^2 + bx + c\n ");
     if (scanf (" %f%f%f", &a, &b, &c) == 3) break;
     else printf ("Некорректный ввод параметров, введите q для выхода из программы или любой другой символ для повторной попытки ввода коэффициентов\n");
+    fflush(stdin);
     check = getchar();
 
     }
-   while (check != 'p');
+   while (check != 'q');
 
 
 
