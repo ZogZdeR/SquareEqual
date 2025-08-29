@@ -63,11 +63,11 @@ void print_solve (float x1, float x2, Quantity quantity)
         default:
             assert (0);
             break;
-    }
- }
+    } 
+}
 
- void out_check (int * check)
- {
+void out_check (int *check)
+{
     printf ("Вы хотите выйте из программы? yes - введите y, нет - введите n\n");
     clear_buffer ();
     *check = getchar ();
@@ -76,4 +76,4 @@ void print_solve (float x1, float x2, Quantity quantity)
         printf (red "Некорректный ввод. Попробуйте еще раз" normal "\n");
         out_check (check);
     }
- }
+}

@@ -6,7 +6,7 @@
 
 void solver_test ()
 {
-    Square_eqw_test arr[7] = {
+    Square_eqw_test arr[] = {
         {0,  0 , 0 , NAN, NAN, fuckin_many},
         {0,  0 , 1 , NAN, NAN,        none},
         {1,  0 , 1 , NAN, NAN,        none},
@@ -42,8 +42,8 @@ void solver_test ()
         printf (green "Every test is correct" normal "\n");
 }
 
- void file_test ()
- {
+void file_test ()
+{
     FILE *file_ptr = fopen ("input.txt", "r");
    
     assert (file_ptr != NULL);
@@ -74,6 +74,6 @@ void solver_test ()
         }
     }
     if (perfect) printf (green "Every test is correct" normal "\n");
- }
+}
 
 
