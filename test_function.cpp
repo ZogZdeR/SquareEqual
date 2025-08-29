@@ -48,7 +48,7 @@ void solver_test ()
    
     assert (file_ptr != NULL);
 
-    Square_eqw_test test_material_struct {0, 0, 0, NULL, NULL, fuckin_many};// Тест из файла
+    Square_eqw_test test_material_struct {0, 0, 0, NULL, NULL, fuckin_many};
     float test_x1 = NAN;
     float test_x2 = NAN;
     Quantity test_quantity = fuckin_many;
