@@ -1,6 +1,7 @@
 //! @file
 #ifndef IO_FUNCTION
 #define IO_FUNCTION
+
 #include <assert.h>
 #include <stdio.h>
 #include <ctype.h>
